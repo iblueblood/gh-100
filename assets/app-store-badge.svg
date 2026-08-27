@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160" height="48" viewBox="0 0 160 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="App Store badge">
+  <rect width="160" height="48" rx="10" fill="#0b4da2"/>
+  <text x="24" y="30" font-family="Inter,Arial" font-size="14" fill="#fff">Download on the</text>
+  <text x="24" y="42" font-family="Poppins,Arial" font-weight="700" font-size="14" fill="#fff">App Store</text>
+</svg>

@@ -1,0 +1,97 @@
+/* styles.css — FirstBank Mobile Money landing (approximate brand tokens) */
+:root{
+  --ff-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --ff-display: "Poppins", system-ui, -apple-system;
+
+  /* Brand tokens (approximate — replace with official tokens if provided) */
+  --color-bg:#f6f9fc;
+  --color-surface:#ffffff;
+  --color-primary:#0b4da2; /* deep blue */
+  --color-accent:#00a3e0; /* cyan */
+  --color-muted:#6c7a89;
+  --color-success:#0f9d58;
+  --radius:12px;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--ff-sans);
+  background:var(--color-bg);
+  color:#102027;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+.container{max-width:var(--container);margin:0 auto;padding:0 20px}
+.site-header{background:linear-gradient(90deg,var(--color-primary),#073a7a);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none}
+.brand-mark{width:48px;height:48px;border-radius:10px;background:var(--color-surface);display:flex;align-items:center;justify-content:center;color:var(--color-primary);font-weight:700}
+.brand-name{font-weight:700;font-family:var(--ff-display);display:block}
+.brand-sub{display:block;font-size:12px;opacity:.9}
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{color:rgba(255,255,255,0.95);text-decoration:none;font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:10px;text-decoration:none}
+.btn-outline{border:1px solid rgba(255,255,255,0.18);background:transparent;color:#fff}
+.btn-primary{background:var(--color-accent);color:#fff;border:none}
+.btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.12)}
+.nav-toggle{display:none;background:transparent;border:0;color:inherit}
+
+/* Hero */
+.hero{padding:64px 0}
+.hero-inner{display:flex;gap:40px;align-items:center}
+.hero-copy{flex:1}
+.hero-copy h1{font-family:var(--ff-display);font-size:40px;margin:0 0 12px;color:var(--color-primary)}
+.lead{font-size:18px;color:var(--color-muted);margin-bottom:18px}
+.cta-row{display:flex;gap:12px;margin-bottom:14px}
+.trust-list{list-style:none;padding:0;margin:10px 0 0;display:flex;gap:14px;color:var(--color-muted)}
+
+.hero-card{width:360px}
+.phone-mock{background:linear-gradient(180deg,#fff,#f7fbff);border-radius:28px;padding:18px;box-shadow:0 8px 30px rgba(11,77,162,0.12)}
+.phone-screen{background:linear-gradient(180deg,#f0f6ff,#fff);border-radius:18px;padding:18px}
+.balance{font-weight:700;font-size:20px;color:var(--color-primary);margin-bottom:12px}
+.quick-actions{display:flex;gap:8px}
+.quick-actions button{flex:1;padding:8px 10px;border-radius:8px;border:0;background:var(--color-primary);color:#fff}
+
+/* Features */
+.features{padding:48px 0}
+.features h2{font-family:var(--ff-display);color:var(--color-primary);margin-bottom:18px}
+.feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.feature{background:var(--color-surface);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(16,32,39,0.04)}
+.feature h3{margin:0 0 8px;color:var(--color-primary)}
+.feature p{margin:0;color:var(--color-muted)}
+
+/* How */
+.how{padding:48px 0}
+.steps{display:flex;gap:18px}
+.step{background:var(--color-surface);padding:18px;border-radius:12px;flex:1;text-align:center}
+.step .num{width:46px;height:46px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--color-accent);color:#fff;font-weight:700;margin-bottom:8px}
+
+/* Download */
+.download{padding:48px 0;background:linear-gradient(180deg,#ffffff, #f8fbff)}
+.download-inner{display:flex;gap:24px;align-items:center;justify-content:space-between}
+.store-buttons{display:flex;gap:12px;margin-top:12px}
+.store{display:inline-block;padding:10px 14px;background:var(--color-primary);color:#fff;border-radius:10px;text-decoration:none}
+.security-note{max-width:360px;background:var(--color-surface);padding:12px;border-radius:10px}
+
+/* FAQ & Footer */
+.faq{padding:36px 0}
+.site-footer{padding:22px 0;background:transparent}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.footer-nav a{margin-left:14px;color:var(--color-muted);text-decoration:none}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-inner{flex-direction:column-reverse}
+  .hero-card{width:100%}
+  .feature-grid{grid-template-columns:1fr}
+  .steps{flex-direction:column}
+  .download-inner{flex-direction:column;align-items:flex-start}
+  .nav{display:none;padding-top:12px}
+  .nav-toggle{display:block}
+}
+
+/* Accessibility helpers */
+a:focus{outline:3px solid #cce8ff;outline-offset:2px}
