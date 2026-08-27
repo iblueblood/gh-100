@@ -1,2 +1,5 @@
-# gh-100
-Repo for GH-100 demos
+# First Bank Mobile Banking Landing Page
+
+Website for firstbank mobile banking
+
+Copyright 2026
